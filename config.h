@@ -1,9 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 /* Default settings; can be overriden by command line. */
 
-static const char dracula_background[] = "#282a36";
 static const char dracula_current_line[] = "#44475a";
-static const char dracula_foreground[] = "#f8f8f2";
 static const char dracula_comment[] = "#6272a4";
 static const char dracula_cyan[] = "#8be9fd";
 static const char dracula_green[] = "#50fa7b";
@@ -22,11 +20,11 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { dracula_foreground, dracula_background },
-	[SchemeSel] = { dracula_foreground, dracula_current_line },
-	[SchemeSelHighlight] = { dracula_purple, dracula_current_line },
-	[SchemeNormHighlight] = { dracula_purple, dracula_background },
-	[SchemeOut] = { dracula_purple, dracula_current_line },
+	[SchemeNorm] = { "#eceff4", "#2e3440" },
+	[SchemeSel] = { "#eceff4", "#434c5e" },
+	[SchemeSelHighlight] = { "#81a1c1", "#434c5e" },
+	[SchemeNormHighlight] = { "#81a1c1", "#2e3440" },
+	[SchemeOut] = { "#81a1c1", "#434c5e" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
